@@ -17,9 +17,9 @@ enum Ability: int
     public function include(): array
     {
         return match ($this) {
-            self::ROOT  => [self::ADMIN, self::ADD_ABILITIES],
-            self::ADMIN => [self::USER, self::BAN_USERS],
-            self::USER  => [self::COOK],
+            self::ROOT  => [self::ADMIN, self::ADD_ABILITIES],  // Admin + Can add abilities
+            self::ADMIN => [self::USER, self::BAN_USERS],       // Like user + Can ban users
+            self::USER  => [self::COOK],                        // Users can cook
             default  => []
         };
     }
