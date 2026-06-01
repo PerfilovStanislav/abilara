@@ -14,10 +14,13 @@ composer require perfilov/abilara
 php artisan abilara:install
 
 php artisan migrate
+
+composer remove perfilov/abilara
 ```
 
 ---
 
+![user-model](./source/user-model.png)
 ![tree-of-abilities](./source/tree-of-abilities.png)
 ![example](./source/example.png)
 

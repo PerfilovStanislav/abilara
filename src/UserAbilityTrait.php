@@ -23,6 +23,14 @@ trait UserAbilityTrait
         return $abilityModel->add(...$abilities);
     }
 
+    public function setAbilities(Ability ...$abilities): bool
+    {
+        /** @var AbilityModel $abilityModel */
+        $abilityModel = $this->abilities()->firstOrNew();
+
+        return $abilityModel->set(...$abilities);
+    }
+
     public function removeAbilities(Ability ...$abilities): bool
     {
         /** @var AbilityModel $abilityModel */

@@ -48,6 +48,13 @@ class AbilityModel extends Model
         return $this->save();
     }
 
+    public function set(Ability ...$abilities): bool
+    {
+        $this->abilities = \array_column($abilities, 'value');
+
+        return $this->save();
+    }
+
     public function remove(Ability ...$abilities): bool
     {
         $toRemove = \array_column($abilities, 'value');
