@@ -1,6 +1,20 @@
 {
     "name": "perfilov/abilara",
-    "description": "Ability-based authorization for Laravel with nested inheritance, recursive permissions, and unified access control",
+    "description": "Laravel authorization package with RBAC + ABAC support, nested groups, hierarchical roles, recursive permission inheritance, abilities, and unified access control management.",
+    "keywords": [
+        "laravel",
+        "authorization",
+        "rbac",
+        "abac",
+        "acl",
+        "permissions",
+        "roles",
+        "nested-roles",
+        "nested-groups",
+        "access-control",
+        "security",
+        "policy"
+    ],
     "license": "MIT",
     "type": "library",
     "time": "2026-05-28",
